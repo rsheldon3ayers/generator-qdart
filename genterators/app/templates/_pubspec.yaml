@@ -1,0 +1,21 @@
+name: <%= name %>
+version: 1.0.0
+description: <%= description %>
+author: <%= author %> <%= email %>
+homepage: https://www.quavermusic.com
+
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dependencies:
+  browser: '>=0.10.0 <0.11.0'
+  dart_to_js_script_rewriter: '^1.0.1'
+
+  quavertools:
+    path: ../QuaverTools
+
+  stagexl: any
+
+transformers:
+- dart_to_js_script_rewriter
